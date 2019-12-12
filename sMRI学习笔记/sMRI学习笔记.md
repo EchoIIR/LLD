@@ -23,6 +23,7 @@
 
 #### MNI(Montreal Neurological Institute)空间
 > MNI空间是基于大量的正常被试的MRI扫描得到的新的标准脑,一般而言MNI模板是最常用的，研究的比较多。
+The MNI 152 is the averaging of 152 3DT1 coming from 152 different healthy peoples using 9 parameters. It means that when you visualize the MNI152 image, you see an "average brain".  
 
 #### Talairach空间
 > Talairach脑是从著名的Talairach和Tournoux图谱解剖并且拍摄得到的,这个图谱有与Brodmann分区近似的标记，图谱是作者看着Brodmann的图谱然后估计这些分区都在这些脑的哪些位置。Talairach空间可以判别当前坐标在什么解剖结构上.比如，输入Talairach坐标-40、-25、-54会得到响应结果Left Cerebrum, Parietal Lobe,Post Central Gyrus, Gray matter, Brodmann area 3。 

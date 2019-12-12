@@ -1,0 +1,39 @@
+Day3（与Viedo对应）
+其中$后面为输入的命令
+
+上午: 补充Day1VBM分析结果的统计部分
+	1. 损坏
+
+	2. 损坏
+
+	3. randomise统计分析：得到t图，p图，1-p图
+
+		路径：sharefolder/8sMRI_day1/vbm/stats下面
+		命令：$ randomise -i GM_mod_merg_s3 -m GM_mask.nii.gz -o anova -d anova.mat -t anova.con -f anova.fts -T -n 300
+		结果： 得到的结果用FSLView查看： sharefolder/8sMRI_day1/vbm/stats/anova_tfce_corrp_fstat1.nii.gz
+
+	4. 用Glm的GUI设置2个变量的相关，并用randomise统计分析
+
+		路径：sharefolder/8sMRI_day1/vbm/stats下面：
+		命令1：$Glm； 在GUI操作：设置设计矩阵EVs，对比矩阵Contrasts,得到模型
+		结果1：corr(自己起的前缀)，其中corr.con,corr,mat
+		命令2：$randomise -i GM_mod_merg_s3 -m GM_mask.nii.gz -o xianggaun  -d corr.mat -t corr.con  -T -n 300
+		结果2：xianggaun开始的(自己起的前缀)，其中corr.con,corr,mat 
+
+	5. 用Glm的GUI设置4个变量的相关，报错了...
+
+	6. FSL主要命令的演示（PPTDay164页）
+
+下午：Freesurfer
+
+	Vedio7. Freesurfer环境配置
+
+	Vedio8. Freesurfer分析前的准备
+		
+	    8.1 修改Freesurfer的数据分析目录，在sharefolder中建立自己数据分析目录：fs_step1
+
+
+
+
+
+
